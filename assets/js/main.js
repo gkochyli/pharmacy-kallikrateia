@@ -8,6 +8,7 @@
 
 	var	$window = $(window),
 		$body = $('body'),
+		$menu = $('#menu'),
 		$wrapper = $('#wrapper');
 
 	// Breakpoints.
@@ -25,6 +26,19 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+		});
+	// Menu.
+		$menu
+		.appendTo($body)
+		.panel({
+			delay: 500,
+			hideOnClick: true,
+			hideOnSwipe: true,
+			resetScroll: true,
+			resetForms: true,
+			side: 'right',
+			target: $body,
+			visibleClass: 'is-menu-visible'
 		});
 
 	// Browser fixes.
