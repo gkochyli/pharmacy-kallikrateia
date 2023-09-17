@@ -8637,7 +8637,7 @@ body {
     #header ul {
         list-style: none;
         margin: 0;
-        padding-left: 0;
+		text-align: right;
     }
 
         #header ul li {
@@ -8648,13 +8648,20 @@ body {
     #header h1 {
         height: inherit;
         line-height: inherit;
-        padding: 0 0 0 1.5em;
+		align-items: center;
         white-space: nowrap;
+		padding: 0 1.5em 0 1.5em;
     }
 
         #header h1 a {
             font-size: 0.7em;
+			align-items: inherit;
         }
+
+			#header h1 a img {
+				right: 0%;
+				height: 100%;
+			}
 
     #header .links {
         -moz-flex: 1;
@@ -8899,15 +8906,21 @@ body {
 		transform: translateX(0);
 		visibility: visible;
 	}
-
+/* 
 	@media screen and (max-width: 736px) {
 		#menu > * {
 			padding: 1.5em;
 		}
-	}
+	} */
 
 	@media screen and (min-width: 736px) {
-        nav.main {
+
+		nav.main {
 			display: none;
         }
+
+		#header ul {
+			padding-right: 1.5em;
+		}
+
     }
