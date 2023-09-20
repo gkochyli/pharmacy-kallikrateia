@@ -4282,6 +4282,11 @@ input, select, textarea {
 			z-index: 1;
 		}
 
+		.banner.style5 .welcome h1, .banner.style5 .welcome h3 {
+			color: #ffffff;
+			font-weight: bold;
+		}
+
 		.banner.style5 .image {
 			-moz-flex-grow: 0;
 			-webkit-flex-grow: 0;
